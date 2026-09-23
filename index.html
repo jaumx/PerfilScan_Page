@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PerfilScan · Auditoria de Perfil do Instagram</title>
+  <meta name="description" content="Seu perfil vende ou só atrai curtidas? O PerfilScan escaneia seu Instagram com IA e entrega um diagnóstico completo em dashboard, com plano de 5 meses, posts prontos e bio refinada.">
+  <meta name="theme-color" content="#161816">
+
+  <meta property="og:title" content="PerfilScan · Auditoria de Perfil do Instagram">
+  <meta property="og:description" content="Diagnóstico completo do seu Instagram em dashboard: nota, raio-X, plano de 5 meses e posts prontos.">
+  <meta property="og:image" content="assets/img/relatorio-p1.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="apple-touch-icon" href="assets/img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="topo">
+    <div class="wrap nav-inner">
+      <a href="#topo" class="brand" aria-label="PerfilScan — início">
+        <img src="assets/img/logo.png" alt="" width="36" height="36">
+        <span>Perfil<b>Scan</b></span>
+      </a>
+
+      <nav class="nav-links" id="menu" aria-label="Seções">
+        <a href="#entrega">O que entregamos</a>
+        <a href="#nichos">Para quem</a>
+        <a href="#planos">Planos</a>
+        <a href="#futuro">Próximos passos</a>
+        <a href="#faq">Dúvidas</a>
+        <a href="#contato" class="btn btn-sm btn-primary">Quero minha auditoria</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Auditoria de Instagram com IA</p>
+          <h1>Seu perfil <span class="hl">vende</span> ou só atrai curtidas?</h1>
+          <p class="lead">
+            Escaneamos sua conta — bio, identidade visual e os últimos posts — e entregamos um
+            <strong>diagnóstico completo em dashboard</strong>, com nota, raio-X e um plano de
+            5 meses pronto para executar.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#contato" class="btn btn-primary btn-lg" data-plano="completa">Quero minha auditoria</a>
+            <a href="#contato" class="btn btn-ghost btn-lg" data-plano="amostra">Ver amostra grátis</a>
+          </div>
+
+          <ul class="hero-stats" aria-label="Números da auditoria">
+            <li><b data-count="6">6</b><span>páginas de relatório</span></li>
+            <li><b data-count="15">15</b><span>blocos estratégicos</span></li>
+            <li><b data-count="5">5</b><span>meses de plano</span></li>
+            <li><b data-count="3">3</b><span>posts prontos</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Páginas reais de uma auditoria PerfilScan">
+          <div class="stack">
+            <img class="sheet sheet-back" src="assets/img/relatorio-p3.jpg" alt="Página de estratégia de crescimento em 5 meses" loading="eager">
+            <img class="sheet sheet-front" src="assets/img/relatorio-p1.jpg" alt="Página de diagnóstico com nota geral do perfil" loading="eager">
+            <div class="scanline" aria-hidden="true"></div>
+
+            <div class="float-card fc-score">
+              <svg viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" class="ring-bg"/><circle cx="22" cy="22" r="18" class="ring-fg"/></svg>
+              <div><small>Nota geral</small><b>6<span>/10</span></b></div>
+            </div>
+            <div class="float-card fc-tip">
+              <span class="pill">Dica rápida</span>
+              <p>Adicione um link de WhatsApp na bio para captar leads direto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FEEDBACKS (marquee) ================= -->
+    <!-- Depoimentos de exemplo. Troque pelos reais em script.js → DEPOIMENTOS -->
+    <section class="ticker" aria-label="O que dizem nossos clientes">
+      <div class="ticker-track" id="tickerTrack"></div>
+    </section>
+
+    <!-- ================= COMO FUNCIONA ================= -->
+    <section class="section" id="como">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> Como funciona</p>
+          <h2>Do seu @ ao plano de ação, <span class="hl">sem enrolação</span></h2>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-n">01</span>
+            <h3>Você envia o perfil</h3>
+            <p>Manda o @, o público que quer atingir e o objetivo: vender mais, engajar ou crescer.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">02</span>
+            <h3>A IA escaneia a conta</h3>
+            <p>Lemos a bio, o visual do perfil e os últimos posts — curtidas, legendas e formatos — e cruzamos com o que funciona no seu nicho.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step-n">03</span>
+            <h3>Você recebe o dashboard</h3>
+            <p>Um relatório visual em PDF, feito só para o seu perfil, com notas, estratégia e o passo a passo.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= O QUE ENTREGAMOS ================= -->
+    <section class="section section-alt" id="entrega">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> O que você recebe</p>
+          <h2>Um relatório de verdade, <span class="hl">página por página</span></h2>
+          <p class="sub">Estas são páginas reais da auditoria do nosso próprio perfil. Toque para ampliar.</p>
+        </header>
+
+        <div class="tabs reveal" role="tablist" aria-label="Páginas do relatório" id="tabs">
+          <button role="tab" aria-selected="true"  data-i="0">01 · Diagnóstico</button>
+          <button role="tab" aria-selected="false" data-i="1">02 · Raio-X</button>
+          <button role="tab" aria-selected="false" data-i="2">03 · Estratégia</button>
+          <button role="tab" aria-selected="false" data-i="3">04 · Conteúdo</button>
+          <button role="tab" aria-selected="false" data-i="4">05 · Crescimento</button>
+          <button role="tab" aria-selected="false" data-i="5">06 · Plano de ação</button>
+        </div>
+
+        <div class="viewer reveal">
+          <figure class="viewer-frame">
+            <button class="viewer-img-btn" id="viewerOpen" aria-label="Ampliar página">
+              <img id="viewerImg" src="assets/img/relatorio-p1.jpg" alt="Página 1 — Diagnóstico">
+            </button>
+            <button class="viewer-nav prev" id="prevPg" aria-label="Página anterior">‹</button>
+            <button class="viewer-nav next" id="nextPg" aria-label="Próxima página">›</button>
+          </figure>
+          <div class="viewer-info">
+            <span class="mono" id="viewerNum">01 / 06</span>
+            <h3 id="viewerTitle">Diagnóstico</h3>
+            <p id="viewerText">Nota geral do perfil, números reais, identidade visual detectada e como seu perfil é percebido à primeira vista.</p>
+          </div>
+        </div>
+
+        <ul class="features">
+          <li class="feature reveal"><span class="ico">◎</span><h3>Nota e raio-X</h3><p>Posicionamento, clareza de oferta e conversão da bio, com nota de 0 a 10.</p></li>
+          <li class="feature reveal"><span class="ico">▦</span><h3>Plano de 5 meses</h3><p>O foco e as ações de cada mês, da fundação da marca à conversão.</p></li>
+          <li class="feature reveal"><span class="ico">✎</span><h3>3 posts prontos</h3><p>Ideia, legenda, CTA e capa sugerida — é só postar.</p></li>
+          <li class="feature reveal"><span class="ico">❝</span><h3>Bio refinada</h3><p>Pronta para copiar e colar, com proposta clara e chamada para ação.</p></li>
+          <li class="feature reveal"><span class="ico">⇅</span><h3>Pago × orgânico</h3><p>Onde investir, quanto, e como engajar sem gastar nada.</p></li>
+          <li class="feature reveal"><span class="ico">✓</span><h3>Plano de ação</h3><p>5 passos práticos e as ferramentas para executar tudo.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= NICHOS ================= -->
+    <!-- Para usar fotos reais, salve em assets/img/nichos/<arquivo>.jpg
+         com os nomes do atributo data-img. Sem a foto, o card fica no gradiente. -->
+    <section class="section" id="nichos">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> Para quem é</p>
+          <h2>Do corretor à pizzaria: <span class="hl">todo perfil que precisa vender</span></h2>
+          <p class="sub">Já auditamos imobiliárias, restaurantes, clínicas de estética, pet shops, cafeterias e criadores de conteúdo.</p>
+        </header>
+
+        <ul class="niches">
+          <li class="niche reveal" data-img="imobiliaria.jpg"><span class="niche-emoji">🏠</span><h3>Imobiliárias e corretores</h3><p>Imóveis que geram contato, não só visualização.</p></li>
+          <li class="niche reveal" data-img="restaurante.jpg"><span class="niche-emoji">🍕</span><h3>Pizzarias e restaurantes</h3><p>Cardápio que dá fome e pedido no direct.</p></li>
+          <li class="niche reveal" data-img="hamburgueria.jpg"><span class="niche-emoji">🍔</span><h3>Hamburguerias</h3><p>Promoções e lançamentos que lotam o delivery.</p></li>
+          <li class="niche reveal" data-img="estetica.jpg"><span class="niche-emoji">💆</span><h3>Estética e beleza</h3><p>Antes e depois que vira agenda cheia.</p></li>
+          <li class="niche reveal" data-img="petshop.jpg"><span class="niche-emoji">🐾</span><h3>Pet shops</h3><p>Comunidade fiel de tutores do bairro.</p></li>
+          <li class="niche reveal" data-img="cafeteria.jpg"><span class="niche-emoji">☕</span><h3>Cafeterias e confeitarias</h3><p>Perfil com cara de lugar que dá vontade de ir.</p></li>
+          <li class="niche reveal" data-img="cosmeticos.jpg"><span class="niche-emoji">💄</span><h3>Cosméticos e moda</h3><p>Vitrine que converte em venda online.</p></li>
+          <li class="niche reveal" data-img="criador.jpg"><span class="niche-emoji">🎥</span><h3>Criadores e social media</h3><p>Posicionamento e autoridade para fechar parcerias.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= PLANOS ================= -->
+    <section class="section section-alt" id="planos">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> Planos</p>
+          <h2>Comece de graça. <span class="hl">Vá até o fim</span> quando quiser.</h2>
+        </header>
+
+        <div class="plans">
+          <article class="plan reveal">
+            <p class="plan-tag">Amostra grátis</p>
+            <h3>Prévia da auditoria</h3>
+            <p class="plan-price">R$ 0</p>
+            <p class="plan-desc">Veja a estrutura real da análise do seu perfil antes de decidir.</p>
+            <ul class="plan-list">
+              <li>Diagnóstico com nota geral</li>
+              <li>Identidade visual detectada</li>
+              <li>Primeiro mês do plano de crescimento</li>
+              <li class="off">Demais páginas bloqueadas</li>
+            </ul>
+            <a href="#contato" class="btn btn-ghost btn-block" data-plano="amostra">Quero a amostra</a>
+          </article>
+
+          <article class="plan plan-featured reveal">
+            <p class="plan-badge">Mais escolhida</p>
+            <p class="plan-tag">Auditoria completa</p>
+            <h3>O dashboard inteiro</h3>
+            <!-- Troque "Sob consulta" pelo valor quando quiser exibir o preço -->
+            <p class="plan-price">Sob consulta</p>
+            <p class="plan-desc">As 6 páginas, feitas só para o seu perfil, prontas para executar.</p>
+            <ul class="plan-list">
+              <li>Raio-X Hoje × Potencial em 5 dimensões</li>
+              <li>Plano de crescimento de 5 meses</li>
+              <li>3 posts prontos com legenda, CTA e capa</li>
+              <li>Bio refinada para copiar e colar</li>
+              <li>Estratégia pago × orgânico</li>
+              <li>Plano de ação em 5 passos + ferramentas</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary btn-block" data-plano="completa">Quero a completa</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FUTURO ================= -->
+    <section class="section" id="futuro">
+      <div class="wrap">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> O que vem por aí</p>
+          <h2>Hoje, o diagnóstico. <span class="hl">Amanhã, o acompanhamento.</span></h2>
+          <p class="sub">O PerfilScan está virando uma plataforma que acompanha a evolução do seu perfil mês a mês.</p>
+        </header>
+
+        <ol class="roadmap">
+          <li class="rm reveal rm-now">
+            <span class="rm-tag">Hoje</span>
+            <h3>Auditoria em PDF</h3>
+            <p>Diagnóstico completo e plano de ação feitos por IA para o seu perfil.</p>
+          </li>
+          <li class="rm reveal">
+            <span class="rm-tag">Em breve</span>
+            <h3>Reauditoria automática</h3>
+            <p>Todo mês, de madrugada, o sistema escaneia seu perfil de novo e compara com a auditoria anterior.</p>
+          </li>
+          <li class="rm reveal">
+            <span class="rm-tag">Em breve</span>
+            <h3>Painel de evolução</h3>
+            <p>Você vê se cumpriu o que o plano pedia no mês 1, no mês 2… e o que mudou nos números.</p>
+          </li>
+          <li class="rm reveal">
+            <span class="rm-tag">Em breve</span>
+            <h3>Planos de assinatura</h3>
+            <p>Acompanhamento contínuo para quem quer crescer com método, não com sorte.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= INSTAGRAM ================= -->
+    <section class="section section-alt" id="instagram">
+      <div class="wrap ig-wrap">
+        <div class="ig-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Siga a gente</p>
+          <h2>Dicas de perfil toda semana no <span class="hl">@perfilscan</span></h2>
+          <p class="sub">Erros comuns de bio, antes e depois de perfis auditados e bastidores do scan.</p>
+          <a class="btn btn-primary btn-lg" href="https://www.instagram.com/perfilscan/" target="_blank" rel="noopener">
+            <!-- Para usar o PNG oficial do Instagram, troque este <svg> por <img src="assets/img/instagram.png" alt="" width="20" height="20"> -->
+            <svg class="ig-glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1.1" class="fill"/></svg>
+            Abrir no Instagram
+          </a>
+        </div>
+
+        <a class="ig-card reveal" href="https://www.instagram.com/perfilscan/" target="_blank" rel="noopener" aria-label="Perfil @perfilscan no Instagram">
+          <div class="ig-head">
+            <div class="ig-avatar"><img src="assets/img/perfilscan-avatar.jpg" alt="Foto do perfil @perfilscan"></div>
+            <div>
+              <p class="ig-user">perfilscan <span class="ig-verified" aria-hidden="true">✓</span></p>
+              <p class="ig-name">PerfilScan | Auditoria de Perfil</p>
+            </div>
+          </div>
+          <p class="ig-bio">
+            Seu perfil vende ou só atrai curtidas?<br>
+            🔍 Escaneamos sua conta e entregamos um diagnóstico completo em dashboard
+          </p>
+          <div class="ig-grid" aria-hidden="true">
+            <img src="assets/img/relatorio-p1.jpg" alt="">
+            <img src="assets/img/capa-sugerida.png" alt="">
+            <img src="assets/img/relatorio-p3.jpg" alt="">
+            <img src="assets/img/relatorio-p5.jpg" alt="">
+            <img src="assets/img/relatorio-p2.jpg" alt="">
+            <img src="assets/img/relatorio-p6.jpg" alt="">
+          </div>
+          <span class="ig-follow">Seguir</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= CONTATO / FORM ================= -->
+    <section class="section contact" id="contato">
+      <div class="wrap contact-inner">
+        <div class="contact-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Vamos escanear o seu</p>
+          <h2>Peça sua auditoria em <span class="hl">1 minuto</span></h2>
+          <p class="sub">Preencha abaixo. A gente analisa o perfil e te chama no WhatsApp com os próximos passos.</p>
+          <ul class="trust">
+            <li>🔒 Seus dados não são compartilhados</li>
+            <li>⚡ Retorno rápido pelo WhatsApp</li>
+            <li>🎯 Relatório feito só para o seu perfil</li>
+          </ul>
+        </div>
+
+        <form class="form reveal" id="leadForm" novalidate>
+          <fieldset class="plan-pick">
+            <legend>O que você quer?</legend>
+            <label class="radio-card">
+              <input type="radio" name="plano" value="Auditoria completa" checked>
+              <span><b>Auditoria completa</b><small>As 6 páginas</small></span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="plano" value="Amostra grátis">
+              <span><b>Amostra grátis</b><small>Prévia do relatório</small></span>
+            </label>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-nome">Seu nome</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar?">
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="f-wpp">WhatsApp</label>
+              <input id="f-wpp" name="whatsapp" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(11) 99999-8888">
+            </div>
+            <div class="field">
+              <label for="f-email">E-mail <em>(opcional)</em></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" placeholder="voce@email.com">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-insta">Perfil do Instagram</label>
+            <div class="input-prefix">
+              <span>@</span>
+              <input id="f-insta" name="instagram" type="text" autocapitalize="off" autocorrect="off" spellcheck="false" required placeholder="seuperfil ou link do perfil">
+            </div>
+          </div>
+
+          <fieldset class="chips-field">
+            <legend>Público que você quer atingir</legend>
+            <div class="chips" data-name="publico" data-single>
+              <button type="button" class="chip">Moradores da região</button>
+              <button type="button" class="chip">Jovens 18–30</button>
+              <button type="button" class="chip">Famílias</button>
+              <button type="button" class="chip">Mulheres</button>
+              <button type="button" class="chip">Empresas (B2B)</button>
+              <button type="button" class="chip">Outro</button>
+            </div>
+          </fieldset>
+
+          <fieldset class="chips-field">
+            <legend>Objetivo da análise <em>(pode marcar mais de um)</em></legend>
+            <div class="chips" data-name="objetivo">
+              <button type="button" class="chip">Vender mais</button>
+              <button type="button" class="chip">Ampliar o público</button>
+              <button type="button" class="chip">Mais engajamento</button>
+              <button type="button" class="chip">Autoridade no nicho</button>
+              <button type="button" class="chip">Reposicionar a marca</button>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label for="f-msg">Quer contar mais? <em>(opcional)</em></label>
+            <textarea id="f-msg" name="mensagem" rows="3" placeholder="Ex.: tenho uma pizzaria e quero mais pedidos pelo direct"></textarea>
+          </div>
+
+          <!-- anti-spam: humanos não veem este campo -->
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit" id="submitBtn">
+            <span class="btn-label">Quero minha auditoria</span>
+            <span class="spinner" aria-hidden="true"></span>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="form-success" id="formSuccess" hidden>
+          <img src="assets/img/logo.png" alt="" width="64" height="64">
+          <h3>Recebemos! 🎉</h3>
+          <p>Seu pedido chegou para o time PerfilScan. Em breve te chamamos no WhatsApp.</p>
+          <a class="btn btn-ghost" href="https://www.instagram.com/perfilscan/" target="_blank" rel="noopener">Enquanto isso, siga o @perfilscan</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq">
+      <div class="wrap narrow">
+        <header class="section-head reveal">
+          <p class="eyebrow"><span class="dot"></span> Dúvidas</p>
+          <h2>Perguntas frequentes</h2>
+        </header>
+
+        <div class="faq">
+          <details class="reveal">
+            <summary>Preciso passar a senha do meu Instagram?</summary>
+            <p>Não. A análise usa só o que é público no seu perfil: bio, foto, destaques e posts. Nunca pedimos senha.</p>
+          </details>
+          <details class="reveal">
+            <summary>Meu perfil é privado. Funciona?</summary>
+            <p>Para a análise precisamos ver o perfil. Deixe público durante o scan e depois volte ao privado se quiser.</p>
+          </details>
+          <details class="reveal">
+            <summary>Como recebo o relatório?</summary>
+            <p>Em PDF, com visual de dashboard, direto no seu WhatsApp ou e-mail. Abre no celular e no computador.</p>
+          </details>
+          <details class="reveal">
+            <summary>Serve para perfil pessoal ou só para empresa?</summary>
+            <p>Serve para os dois. Já auditamos negócios locais, lojas online, profissionais de estética e criadores de conteúdo.</p>
+          </details>
+          <details class="reveal">
+            <summary>Qual a diferença entre a amostra e a completa?</summary>
+            <p>A amostra mostra o diagnóstico e o primeiro mês do plano, com as demais páginas bloqueadas. A completa libera as 6 páginas: raio-X, plano de 5 meses, posts prontos, bio refinada, pago × orgânico e plano de ação.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a href="#topo" class="brand">
+        <img src="assets/img/logo.png" alt="" width="32" height="32">
+        <span>Perfil<b>Scan</b></span>
+      </a>
+      <p>Análises profundas para marcas que querem atenção real no digital.</p>
+      <p class="footer-links">
+        <a href="https://www.instagram.com/perfilscan/" target="_blank" rel="noopener">@perfilscan</a>
+        <span aria-hidden="true">·</span>
+        <a href="mailto:perfilscan@gmail.com">perfilscan@gmail.com</a>
+      </p>
+      <p class="copy">© <span id="ano">2026</span> PerfilScan by ALGORA</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante: aparece só quando WHATSAPP_NUMERO estiver preenchido em script.js -->
+  <a class="wpp-float" id="wppFloat" href="#" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3z"/></svg>
+  </a>
+
+  <!-- Lightbox das páginas do relatório -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lb-close" id="lbClose" aria-label="Fechar">×</button>
+    <img id="lbImg" src="" alt="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
